@@ -1,0 +1,95 @@
+.heart-container {
+  display: flex;
+  transform: rotate(17deg);
+  /*margin-top: 50px;*/
+  margin-left: 1120px;
+}
+.heart {
+  padding-top: 130px;
+  width: 150px;
+  height: 90px;
+
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  /*Css firefox*/
+  -moz-animation-name: pulse;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+
+  /*Css safari e chrome*/
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  /*Css IE*/
+  -ms-animation-name: pulse;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: alternate;
+
+  /*Css Opera*/
+  -o-animation-name: pulse;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    filter: brightness(35%);
+  }
+  100% {
+    transform: scale(1.0);
+    filter: brightness(290%);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    filter: brightness(35%);
+  }
+  100% {
+    transform: scale(1.0);
+    filter: brightness(290%);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    filter: brightness(35%);
+  }
+  100% {
+    transform: scale(1.0);
+    filter: brightness(290%);
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    filter: brightness(35%);
+  }
+  100% {
+    transform: scale(1.0);
+    filter: brightness(290%);
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    filter: brightness(35%);
+  }
+  100% {
+    transform: scale(1.0);
+    filter: brightness(290%);
+  }
+}
